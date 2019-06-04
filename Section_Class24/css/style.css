@@ -1,0 +1,251 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* Link style
+------------------------------ */
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid
+}
+a:hover {
+	text-decoration: none
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #212121;
+	margin: 0 0 15px;
+}
+h1{
+	font-size: 40px;
+	line-height: 50px;
+}
+h2{
+	font-size: 34px;
+	line-height: 44px;
+}
+h3{
+	font-size: 22px;
+	line-height: 30px;
+}
+h4{
+	font-size: 20px;
+	line-height: 26px;
+}
+h5{
+	font-size: 18px;
+	line-height: 22px;
+}
+h6{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: "Titillium Web",sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus, 
+.btn-primary:active:hover {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.slider-area {
+    padding-top: 100px;
+}
+
+
+
+.section-bg {
+	background: #ddd url(../img/body-bg.jpg) no-repeat center center / cover;
+	position: relative;
+	z-index: 1;
+}
+.slide-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: .9;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.header {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+.header-right ul li {
+  display: inline-block;
+}
+.header-right {
+  text-align: right;
+}
+.header-right ul li a {
+  display: inline-block;
+  text-transform: capitalize;
+  color: #b99797;
+  padding: 25px 14px 10px 25px;
+  font-weight: 700;
+}
+.header-right ul li a:hover {
+  color: #D5BC69;
+}
+.header-right ul li > i.fa {
+	opacity: 0;
+  	margin-right: -18px;
+ 	color: #D5BC69;
+ 	transition: all ease .3s;
+}
+.header-right ul li:hover i.fa {
+	opacity: 1;
+}
+.header-right ul li:last-child {
+  margin-right: -14px;
+}
+.header-left h2 {
+  margin: 0;
+  padding: 15px 0;
+  text-transform: capitalize;
+}
+.header-right ul li a.fa-search {
+  padding-left: -10px;
+  margin-left: -10px;
+}
+.slider-content h2 {
+    color: #D5BC69;
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 50px;
+    margin-bottom: 35px;
+}
+.slider-content p {
+    color: #fff;
+    line-height: 22px;
+    margin-bottom: 40px;
+}
+.slider-content .read-more-btn {
+    color: #D5BC69;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.slider-content .read-more-btn:hover {
+    opacity: .8;
+}
+.slider-content .read-more-btn i.fa {
+    padding-left: 5px;
+} 
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    max-height: 550px;
+}
+.slider-content {
+    margin-top: 110px;
+}
+
+
+
+
+
+	

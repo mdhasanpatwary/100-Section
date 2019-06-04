@@ -1,0 +1,258 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+    transition: all 0.3s ease; 
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+	margin: 0;
+}
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+/*
+    Main Css
+*/
+
+.isotope-area {
+    margin: 50px 0;
+}
+
+.isotope-title {
+  margin-bottom: 50px;
+}
+.isotope-title ul li {
+  display: inline-block;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 24px;
+  margin-right: -3px;
+    margin-bottom: 8px;
+  transition: .3s;
+}
+.isotope-title ul li:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+.isotope-title ul li:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.isotope-title ul li:hover {
+  color: #71bfbc;
+    box-shadow: 0 2px 2px #ccc;
+}
+.isotope-title ul li.active {
+     color: #71bfbc;
+}
+
+
+
+
+
+
+
+
+
+
+.single-box {
+    background-color: #ddd;
+    background: #ddd url(../img/bg.jpg) no-repeat center center / cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.bg2 { background: #ddd url(../img/bg2.jpg) no-repeat center center / cover; height: 630px;}
+.bg3 { background: #ddd url(../img/bg3.jpg) no-repeat center center / cover; }
+.bg4 { background: #ddd url(../img/bg4.jpg) no-repeat center center / cover; height: 630px;}
+.bg5 { background: #ddd url(../img/bg5.jpg) no-repeat center center / cover; height: 630px; }
+.bg6 { background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;}
+.bg7 { background: #ddd url(../img/bg7.jpg) no-repeat center center / cover; }
+.bg8 { background: #ddd url(../img/bg8.jpg) no-repeat center center / cover; }
+.bg9 { background: #ddd url(../img/bg9.jpg) no-repeat center center / cover; }
+
+
+
+
+.single-hover {
+  z-index: 2;
+    opacity: 0;
+}
+.single-hover a i.fa {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 20px;
+  transform: rotate(90deg);
+  transition: .3s;
+  color: #4DC6C3;
+}
+.single-hover a i.fa:hover {
+  color: #fff;
+}
+.single-hover h6 {
+  position: absolute;
+  color: #fff;
+  bottom: 30px;
+  left: 30px;
+  text-transform: capitalize;
+}
+.single-hover h6 span {
+  color: #4DC6C3;
+  display: block;
+  padding-top: 8px;
+}
+.single-box:after {
+    content: "";
+    background: #000;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    transition: .5s;
+}
+.single-box:hover:after {
+    opacity: .7;
+}
+.single-box:hover .single-hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,193 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #212121;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+a:focus{
+	outline: 0 solid;
+}
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.boxed-video-area {
+    display: block;
+    height: 350px;
+    width: 100%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid #fff;
+    position: relative;
+    background-color: #ddd;
+    transition: .3s;
+}
+.boxed-video-area:hover {
+    background-size: 150%;
+}
+.boxed-video-area > i.fa {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #FB323A;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    color: #fff;
+    left: calc(50% - 35px);
+    top: calc(50% - 35px);
+    transition: .5s;
+}
+.boxed-video-area:hover > i.fa {
+    transform: rotate(238deg);
+}
+.boxed-video-area:hover .video-overlay {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+
+.video-overlay {
+  color: #fff;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .5s;
+  transform: scale(.1);
+}
+.virtically {
+    align-self: center;
+}
+.video-overlay i.fa {
+  display: block;
+  font-size: 24px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid;
+  margin: 0 auto;
+  border-radius: 50%;
+  line-height: 50px;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.video-overlay:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #FB323A;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+.video-overlay span {
+  text-transform: uppercase;
+  position: relative;
+  opacity: .8;
+}
+.video-overlay span:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 2px;
+  right: -58px;
+  bottom: 50%;
+}
+.video-overlay span::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 50px;
+  height: 2px;
+  left: -58px;
+  bottom: 50%;
+}
+.video-overlay h3 {
+  text-transform: capitalize;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 700;
+}
+.video-overlay p {
+  opacity: .8;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

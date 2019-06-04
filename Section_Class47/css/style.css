@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Sarabun:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+   font-family: 'Sarabun', sans-serif;
+	color: #fff;
+	line-height: 18px;
+    font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+    margin: 50px 0;
+}
+
+.section-bg {
+    background: #ccc url(../img/testimonial-bg.jpg);
+}
+
+
+
+.single-slide img {
+  max-width: 75px;
+  border-radius: 50%;
+  min-height: 75px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.single-slide p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 26px;
+  margin-bottom: 50px;
+  padding: 0 100px;
+  position: relative;
+}
+.single-slide h6 {
+  text-transform: capitalize;
+  font-weight: 700;
+  opacity: .6;
+  margin-bottom: 14px;
+}
+.single-slide h6 span {
+  display: block;
+  font-size: 80%;
+  margin-top: 6px;
+  font-weight: 400;
+}
+
+.single-slide p:before {
+  content: "\f10d";
+  font-family: fontAwesome;
+  position: absolute;
+  left: 50px;
+  font-size: 30px;
+  top: 0;
+}
+.single-slide p::after {
+    content: "\f10e";
+    position: absolute;
+    font-family: fontAwesome;
+    right: 50px;
+    font-size: 30px;
+    bottom: -10px;
+}
+
+
+.slider-items .owl-dots div {
+    height: 12px;
+    width: 12px;
+    background: #7b7b7b;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+.slider-items .owl-dots div.active {
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

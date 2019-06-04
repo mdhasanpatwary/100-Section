@@ -1,0 +1,265 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #B0B8C0;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+    color: #fff;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+    transition: all 0.3s ease; 
+    opacity: .8;
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #fff;
+	margin: 0;
+}
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-wrap {
+    margin: 50px 0;
+}
+.section {
+    position: relative;
+}
+
+.section-bg {
+    background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+        
+}
+.section-bg1 {
+   background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.content, .content1 {
+  background: #202932;
+  position: relative;
+  z-index: 1;
+  padding: 100px;
+}
+.content {
+     margin-right: -16px;
+    padding-left: 0;
+}
+.content1 {
+    margin-left: -15px;
+    padding-right: 0;
+}
+.content h2, .content1 h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.content p, .content1 p {
+  line-height: 1.8;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.read-more-btn {
+  display: inline-block;
+  font-weight: 700;
+  border: 1px solid #ed9f9f;
+  padding: 10px 30px;
+}
+.content:before {
+  content: "";
+  background: #202932;
+  width: 1000%;
+  height: 100%;
+  left: -1000%;
+  top: 0;
+  position: absolute;
+}
+.content1:before {
+  content: "";
+  background: #202932;
+  width: 1000%;
+  height: 100%;
+  right: -1000%;
+  top: 0;
+  position: absolute;
+}
+.content::after {
+    content: "";
+    position: absolute;
+    background: #ccc;
+    height: 100px;
+    width: 2px;
+    left: -50px;
+    top: 100px;
+
+}
+.content1::after {
+    content: "";
+    position: absolute;
+    background: #ccc;
+    height: 100px;
+    width: 2px;
+    left: 50px;
+    top: 100px;
+
+}
+
+.arrow {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.arrow:after {
+  width: 40px;
+  height: 40px;
+  content: "";
+  position: absolute;
+  background: red;
+  right: 0;
+  top: 0;
+}
+.arrow::after {
+
+    width: 40px;
+    height: 40px;
+    content: "";
+    position: absolute;
+    background: #202932;
+    right: -120px;
+    top: 92.5px;
+    transform: rotate(45deg);
+
+}
+.section-bg:before, .section-bg1:before {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    opacity: .5;
+    
+}
+
+
+
+
+
+
+
+
+
+
+

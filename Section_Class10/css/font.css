@@ -1,0 +1,7 @@
+@font-face{
+	font-family:"code-light";
+	src:url("../font/code-light.eot") format("eot"),
+	url("../font/code-light.woff") format("woff"),
+	url("../font/code-light.ttf") format("truetype"),
+	url("../font/code-light.svg#code-light") format("svg");
+}

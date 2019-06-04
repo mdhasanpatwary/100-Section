@@ -1,0 +1,106 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+.section-bg {
+	background: #ddd url(../img/bg10.jpg) no-repeat center center / cover;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+.section-bg:before {
+	background: #fff;
+	height: 100%;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	content: "";
+	opacity: .8;
+	left: 0;
+	top: 0;
+}
+
+.content h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.content p {
+  margin: 30px 0;
+  max-width: 400px;
+  line-height: 22px;
+}
+.btn {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #333;
+  font-weight: 700;
+  border: 1px solid #fff;
+  transition: .3s;
+}
+.btn:hover {
+  box-shadow: 0 0 8px #399339;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

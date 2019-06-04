@@ -1,0 +1,573 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+/*========= Header Section =========*/
+header {
+  background: #181818;
+  padding: 20px 0;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.logo {
+  text-decoration: none;
+  color: #777;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+nav > ul {
+  float: right;
+}
+
+nav > ul > li {
+  text-align: center;
+  line-height: 40px;
+  margin-left: 70px;
+}
+
+nav > ul li ul li {
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li:hover > a {
+  color: #777;
+}
+
+nav > ul > li > a {
+  cursor: pointer;
+  display: block;
+  outline: none;
+  width: 100%;
+  text-decoration: none;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+nav a {
+  color: white;
+}
+
+nav > ul li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100px;
+  z-index: 2000;
+  background: red;
+}
+
+nav > ul li ul li > a {
+  text-decoration: none;
+}
+
+[type=checkbox],
+label {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  label {
+    display: block;
+    background: #222;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+  }
+
+  label:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: #777;
+    margin: 7px 5px;
+    box-shadow: 0px 10px 0px #777, 0px 20px 0px #777;
+  }
+
+  [type=checkbox]:checked ~ ul {
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    right: 20px;
+    left: 20px;
+  }
+
+  nav a {
+    color: #777;
+  }
+
+  nav ul li {
+    display: block;
+    float: none;
+    width: 100%;
+    text-align: left;
+    background: #222;
+    text-indent: 20px;
+  }
+
+  nav > ul > li {
+    margin-left: 0px;
+  }
+
+  nav > ul li ul li {
+    display: block;
+    float: none;
+    margin-left: 15px;
+  }
+
+  nav > ul li ul {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    float: none;
+  }
+}
+/*========= both Section =========*/
+.section-both {
+  display: none;
+  visibility: hidden;
+  background: #ddd url(../img/bg6.jpeg) no-repeat center center/cover;
+  position: relative;
+  z-index: 1;
+  padding: 60px;
+}
+.section-both:before, .section-chetus .chetus-content h2.section-both:after {
+  position: absolute;
+  content: "";
+  background-color: #042C46;
+  opacity: 0.7;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.timeline-title {
+  color: #fff;
+  margin-bottom: 60px;
+}
+.timeline-title h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.timeline-title h2 span {
+  color: #2C89E0;
+}
+.timeline-title p {
+  line-height: 20px;
+}
+
+.timeline-area .single-timeline-item {
+  text-align: center;
+  position: relative;
+}
+.timeline-area .single-timeline-item img.timeline-img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.timeline-area .single-timeline-item .timeline-text {
+  position: absolute;
+  background-color: #042639;
+  color: #fff;
+  padding: 20px;
+  width: 300px;
+  left: 140px;
+  top: -10px;
+  text-align: right;
+  font-size: 14px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.timeline-area .single-timeline-item .timeline-text:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 30px solid #042639;
+  border-bottom: 15px solid transparent;
+  top: calc(50% - 15px);
+  right: -30px;
+}
+.timeline-area .single-timeline-item .timeline-text h3 {
+  color: #6868b0;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.timeline-area .single-timeline-item:nth-child(2n) .timeline-text {
+  background-color: #fff;
+  color: #000;
+  right: 140px;
+  left: auto;
+  text-align: left;
+}
+.timeline-area .single-timeline-item:nth-child(2n) .timeline-text:after {
+  left: -30px;
+  border-right: 30px solid #fff;
+  border-left: none;
+}
+.timeline-area .single-timeline-item:before, .timeline-area .section-chetus .chetus-content h2.single-timeline-item:after, .section-chetus .chetus-content .timeline-area h2.single-timeline-item:after {
+  height: 100%;
+  width: 2px;
+  background: #CCEDD9;
+  content: "";
+  top: 0;
+  position: absolute;
+  left: calc(50% - 1px);
+  z-index: -1;
+}
+.timeline-area .single-timeline-item:last-child:before, .timeline-area .section-chetus .chetus-content h2.single-timeline-item:last-child:after, .section-chetus .chetus-content .timeline-area h2.single-timeline-item:last-child:after {
+  display: none;
+  visibility: hidden;
+}
+
+/*========= Second Section =========*/
+.section-second {
+  display: none;
+  visibility: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 50px 0;
+}
+.section-second:after {
+  background-color: blue;
+  opacity: 0.5;
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.section-second .timeline-area {
+  margin-top: 30px;
+}
+.section-second .timeline-area .single-timeline-item {
+  width: 150px;
+  margin: 0 auto;
+}
+.section-second .timeline-area .single-timeline-item img.timeline-img {
+  display: block;
+  padding: 5px;
+  border: 2px dashed blue;
+}
+.section-second .timeline-area .single-timeline-item .timeline-text {
+  width: 350px;
+  height: 180px;
+  left: -400px;
+  top: calc(50% - 90px);
+}
+.section-second .timeline-area .single-timeline-item .timeline-text h3 {
+  color: #6868b0;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+.section-second .timeline-area .single-timeline-item:nth-child(2n) .timeline-text {
+  right: -400px;
+  left: auto;
+}
+
+/*========= Service Section =========*/
+.service-section .single-service-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+.service-section .single-service-box .table-area {
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.service-section .single-service-box .table-area .v-middle {
+  align-self: center;
+}
+.service-section .single-service-box .table-area .v-middle h3 {
+  position: static;
+}
+.service-section .single-service-box .service-bg {
+  width: 100%;
+  height: 100%;
+}
+.service-section .single-service-box .service-bg-hide {
+  opacity: 0;
+}
+.service-section .single-service-box h3 {
+  position: absolute;
+  background: #f68f8f;
+  color: #fff;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px;
+}
+
+/*========= Particle Section =========*/
+.section-particle {
+  background: #fba6a6;
+  position: relative;
+}
+.section-particle canvas {
+  position: absolute;
+  top: 0;
+}
+
+/*========= Top White Section =========*/
+.section-topwhite {
+  background: #ddd url(../img/swiming.jpg) no-repeat center top/cover;
+  position: relative;
+  z-index: 1;
+}
+.section-topwhite:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  background: -moz-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-linear-gradient(top, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, white 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#00ffffff",GradientType=0 );
+}
+.section-topwhite .section-content {
+  margin-bottom: 200px;
+}
+.section-topwhite .section-content h1, .section-topwhite .section-content .new-section .text-zone h4, .new-section .text-zone .section-topwhite .section-content h4 {
+  font-family: "Pacifico", cursive;
+}
+.section-topwhite .section-content p.price {
+  font-size: 20px;
+  color: #D33F5F;
+  font-weight: 700;
+}
+.section-topwhite .section-content a.btn {
+  background: #D33F5F;
+  color: #fff;
+}
+.section-topwhite .section-content a.btn:hover {
+  background: #F5365F;
+}
+.section-topwhite .section-content a.btn:focus, .section-topwhite .section-content a.btn:active {
+  outline: none;
+}
+
+/*========= half Section =========*/
+.section-half {
+  position: relative;
+  z-index: 1;
+  margin-top: -95px;
+}
+.section-half .single-box {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px #D33F5F;
+}
+.section-half .single-box i.fa {
+  font-size: 35px;
+  margin-bottom: 14px;
+}
+.section-half .single-box p {
+  text-transform: capitalize;
+}
+.section-half .single-box p span {
+  color: #D33F5F;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/*========= New Section Area =========*/
+.new-section {
+  background: #ddd;
+  margin: 50px;
+  text-align: center;
+}
+.new-section .text-zone h1, .new-section .text-zone h4 {
+  background: #f27373;
+  color: green;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 5px;
+}
+.new-section .text-zone h4 {
+  background: #43ae43;
+  color: #b43030;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.new-section .text-zone .p1 {
+  border: 5px solid red ;
+  background: red;
+}
+.new-section .text-zone .p2 {
+  border: 5px dotted red;
+  background: green;
+}
+.new-section .text-zone .p3 {
+  border: 5px dashed red;
+  background: tomato;
+}
+.new-section .text-zone .p4 {
+  border: 5px inset red;
+  background: yellow;
+}
+.new-section .text-zone .p5 {
+  border: 5px dotted red;
+  background: pink;
+}
+.new-section .text-zone .p6 {
+  border: 5px dotted red;
+  background: #000;
+}
+
+/*========= chetus section =========*/
+.section-chetus {
+  margin: 100px 0;
+  position: relative;
+  z-index: 1;
+  padding: 100px 0;
+}
+.section-chetus:before, .section-chetus .chetus-content h2.section-chetus:after {
+  background: #D8EAF6;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transform: skewY(-6deg);
+}
+.section-chetus .chetus-content h2 {
+  background: #D14424;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: 700;
+  position: relative;
+}
+.section-chetus .chetus-content h2:before, .section-chetus .chetus-content h2:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background: #D14424;
+  position: absolute;
+  left: -19px;
+  top: 4px;
+  transform: rotate(45deg);
+}
+.section-chetus .chetus-content h2:after {
+  right: -19px;
+  left: auto;
+  background: #D8EAF6;
+}
+
+/*========= Social Mac section =========*/
+.social-mac {
+  background: #333;
+  position: relative;
+  z-index: 1;
+}
+.social-mac:before, .section-chetus .chetus-content h2.social-mac:after {
+  position: absolute;
+  content: "";
+  background: url(../img/shape.png) repeat-x;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.social-mac .social-icons ul li {
+  display: inline-block;
+}
+.social-mac .social-icons ul li a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  border: 1px solid;
+  text-align: center;
+  line-height: 32px;
+  transform: rotate(-45deg);
+  margin-right: 9px;
+  margin-bottom: 13px;
+  transition: 0.3s;
+}
+.social-mac .social-icons ul li a:hover {
+  border-color: red;
+}
+.social-mac .social-icons ul li a i.fa {
+  transform: rotate(45deg);
+}
+
+/*# sourceMappingURL=style.css.map */

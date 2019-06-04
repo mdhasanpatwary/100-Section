@@ -1,0 +1,131 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size:14px;
+	color:#000;
+	font-family: sans-sarif, arial !important;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+		text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+img {
+	width:100%;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+.section-bg {
+	position: relative;
+	margin: 100px 0;
+	min-height: 852px;
+
+}
+.section-bg:after {
+	background: url(../img/boat.jpg) center center / cover;
+	position: absolute;
+	content: "";
+	width: 45%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+.content h2 {
+  font-size: 38px;
+  text-transform: uppercase;
+}
+.content h2 span {
+  color: #3165f6;
+}
+.content p {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.faqs .btn {
+  border: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  color: #000;
+}
+.faqs .card-header {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.faqs .btn:hover {
+  text-decoration: none;
+}
+.faqs .card {
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+
+
+.faqs h2.mb-0 button.btn:after {
+  content: "\f106";
+  font-family: fontAwesome;
+  font-size: 160%;
+  line-height: 24px;
+  float: right;
+  color: blue;
+  font-weight: 900;
+}
+.faqs h2.mb-0 button.btn[aria-expanded=true]:after {
+  font-size: 160%;
+  font-family: fontAwesome;
+  content: "\f107";
+}
+
+
+
+
+
+

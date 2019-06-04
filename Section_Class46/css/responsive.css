@@ -1,0 +1,108 @@
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px) {
+   
+}
+
+/* Moblie devices (mobile, 0px to 768px) */
+@media only screen and (max-width:767px) {
+   
+    .pricing-box {
+        font-weight: 500;
+        height: 72%;
+    }  
+    .pricing-box p.price {
+        font-size: 20px;
+        line-height: 0px;
+    }   
+    .pricing-box a.cart {
+        padding: 5px 7px;
+        font-size: 16px;
+        top: 20px;
+        left: -14px;
+    }   
+    .trailor-area img {
+        padding-top: 80px;
+    }    
+    .slider-text {
+        padding-top: 0;
+        text-align: center;
+    }    
+    .slider-text h2::before {
+        left: calc(50% - 25px);
+        width: 50px;
+    }    
+    .section-padding {
+        padding: 50px 0;
+    }    
+}
+
+/* Wide Mobile Layout: (480px to 767px) */
+@media only screen and (min-width:480px) and (max-width:767px) {
+	
+    
+     .pricing-box {
+        font-weight: 500;
+        height: 50%;
+    }  
+    .pricing-box p.price {
+        font-size: 30px;
+        line-height: 10px;
+    }   
+    .pricing-box a.cart {
+        padding: 5px 7px;
+        font-size: 16px;
+        top: 20px;
+        left: -14px;
+    }   
+    .trailor-area img {
+        padding-top: 80px;
+    }    
+    .slider-text {
+        padding-top: 0;
+        text-align: center;
+    }   
+    .section-padding {
+        padding: 50px 0;
+    } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

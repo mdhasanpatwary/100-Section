@@ -1,0 +1,223 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+	max-height: 100%;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+.right-side {
+	background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+	width: 80%;
+	margin-left: 20%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	z-index: 1;
+}
+
+.left-side {
+  background: #666;
+  width: 20%;
+  color: #fff;
+  position: fixed;
+  height: 100%;
+}
+
+.section-wrap {
+  height: 100%;
+}
+.right-content {
+  align-self: center;
+  padding-left: 10%;
+}
+.right-content h1 {
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 55px;
+  font-weight: 700;
+  position: relative;
+}
+.right-content h1 span {
+  color: #FFB200;
+}
+.right-content h1:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #FFB200;
+  bottom: 12px;
+  right: -50px;
+}
+.right-content h6 {
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: 700;
+}
+.btn {
+  color: #333;
+  font-weight: 700;
+  background: rgb(255,255,255,.6);
+  border-radius: 50px;
+  padding: 8px 24px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.btn:hover {
+  background: #FFB200;
+}
+.right-side:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+
+
+
+
+
+.logo h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  font-size: 34px;
+  line-height: 95px;
+}
+.logo h1 a {
+  color: #fff;
+  font-weight: 700;
+}
+.logo {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 5px;
+}
+.logo h1:after {
+  content: "";
+  background: #FFB200;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 50px);
+  z-index: -1;
+  opacity: .2;
+}
+.main-menu ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 8px;
+}
+.main-menu ul li a:hover {
+  color: #FFB200;
+  border-bottom: 3px solid #FFB200;
+}
+.main-menu ul li {
+  padding: 15px 0;
+}
+.main-menu {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+.main-menu ul {
+  align-self: center;
+  text-align: center;
+}
+.icon a i.fa {
+  color: #fff;
+  padding: 10px;
+  transition: .3s;
+}
+.icon a i.fa:hover {
+  color: #FFB200;
+}
+.icon p {
+  text-transform: capitalize;
+}
+.icon {
+    position: absolute;
+    bottom: 0px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 16px;
+}
+.copyright-text span {
+  color: #FFB200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

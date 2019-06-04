@@ -1,0 +1,294 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #f1f1f1;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid
+}
+a:hover {
+	text-decoration: none
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+	margin: 0;
+}
+h1{
+	font-size: 40px;
+	line-height: 50px;
+}
+h2{
+	font-size: 34px;
+	line-height: 44px;
+}
+h3{
+	font-size: 22px;
+	line-height: 30px;
+}
+h4{
+	font-size: 20px;
+	line-height: 26px;
+}
+h5{
+	font-size: 18px;
+	line-height: 22px;
+}
+h6{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus, 
+.btn-primary:active:hover {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+.footer {
+    margin: 50px 0;
+}
+.footer-top {
+  background: #06A2F7;
+  padding: 50px 0;
+}
+.footer-top, .footer-top a, .footer-top h3, .footer-top h4 {
+  color: #fff;
+}
+.left1 {
+  margin-bottom: 30px;
+}
+.left1 h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 26px;
+}
+.left1 p {
+  line-height: 21px;
+  margin-bottom: 40px;
+}
+.social ul li {
+  display: inline-block;
+}
+.social ul li a {
+  padding-right: 10px;
+  transition: .3s;
+  font-size: 16px;
+  font-weight: 700;
+}
+.left1 ul li a:hover {
+  color: #e9e95d;
+}
+
+
+.left1 ul li a {
+  line-height: 26px;
+  font-weight: 550;
+  transition: .3s;
+}
+.left1 ul li a:hover {
+  padding-left: 5px;
+}
+
+
+
+.street ul li a {
+    padding-left: 30px;
+    padding-bottom: 14px;
+    display: block;
+    position: relative;
+}
+.street ul li a:hover {
+  opacity: .9;
+  padding-left: 30px;
+}
+.street ul li a i.fa {
+  position: absolute;
+  left: 0px;
+  top: 6px;
+}
+.street ul li:first-child a {
+  line-height: 20px;
+}
+.contact-form h4 {
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 550;
+  padding-bottom: 10px;
+}
+.street {
+  padding-bottom: 22px;
+}
+input[type=email] {
+  width: 78%;
+  border: none;
+  padding: 8px;
+}
+input[type="submit"] {
+  width: 20%;
+  border: none;
+  padding: 8px 0;
+  color: #06A2F7;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: .9;
+}
+input[type="submit"]:hover {
+  opacity: 1;
+}
+.contact-form p {
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.footer-bottom, .footer-bottom a {
+    color: #AEB0BD;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.footer-menu ul li {
+  display: inline-block;
+  padding-left: 20px;
+}
+.footer-menu ul li:after {
+  content: "|";
+  position: absolute;
+  padding: 0 10px;
+}
+.footer-menu ul li:last-child:after {
+  display: none;
+}
+.footer-menu {
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

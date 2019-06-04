@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100%;
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+	max-height: 100%;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+
+
+/* ================ Count Down area css ================== */
+
+.section-bg {
+	background: #ddd url(../img/bg4.jpg) no-repeat center center / cover;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+.section-bg:after {
+	background: #322424;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .7;
+	content: "";
+}
+
+.section-middle {
+  align-self: center;
+}
+.section-middle h1 {
+  font-size: 70px;
+  color: #fff;
+}
+.section-middle h4 {
+  color: #fff;
+}
+.subscribe-area {
+  max-width: 500px;
+  margin: 30px auto;
+}
+.subscribe-area input[type=email] {
+  font-style: italic;
+  text-transform: capitalize;
+}
+#getting-started {
+	margin-top: 60px;
+}
+.countdown-wrap {
+	position: relative;
+}
+.single-countdown {
+	font-size: 60px;
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	padding: 0 30px;
+	line-height: 50px;
+	font-weight: 700;
+}
+.single-countdown span {
+	font-size: 14px;
+	text-transform: uppercase;
+	
+}
+
+
+/* ================ Form area section css ================== */
+
+.section-padding {
+	padding-top: 30px;
+	background: linen;
+	margin: 20px 0;
+}
+.bg-area {
+	background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+	position: relative;
+	z-index: 1;
+	padding: 50px 30px;
+	height: 85%;
+
+}
+.bg-area:after {
+	background: #fff;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	opacity: .7;
+	content: "";
+}
+.form-area {
+  background: #fff;
+  margin-left: 50px;
+  padding: 20px 50px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px #b18b8b;
+}
+textarea, input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  background: #f0efef;
+  margin-top: 20px;
+}
+textarea {
+  border-radius: 0;
+  margin-top: 0;
+  max-height: 120px;
+  resize: none;
+}
+input[type=submit] {
+  background: #e76969;
+  color: #fff;
+  font-weight: 70202;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form-area h2 {
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.left-area h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 22px 0;
+}
+.left-area p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #292929;
+}
+.btn {
+  text-transform: capitalize;
+  background: #ff8484;
+  color: #fff;
+  padding: 5px 26px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+.btn:hover, input[type=submit]:hover {
+  color: #fff;
+  box-shadow: 0 0 10px #289465;
+}
+
+/* ================ Bar Filler Default css ================== */
+
+.barfiller {
+    width:100%;
+    height:12px;
+    background:#343849;
+    border:1px solid #ccc;
+    position:relative;
+    margin-bottom:20px;
+    border: none; 
+}
+
+.barfiller .fill {
+    display:block;
+    position:relative;
+    width:0px;
+    height:100%;
+    background:#333;
+    z-index:1;
+}
+
+.barfiller .tipWrap {
+    display:none;
+} 
+.barfiller .tip {
+    margin-top: -30px;
+    color: #fff;
+    right: 0px;
+    position: absolute;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: auto;
+}
+
+
+/* ================ Progress Bar area css ================== */
+
+.section-progress {
+	padding: 80px;
+	background-color: #65CBF1;
+	margin-bottom: 30px;
+}
+
+.content {
+  margin-bottom: 50px;
+}
+.content p {
+  color: #fff;
+  line-height: 22px;
+}
+.bar-area h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.images img {
+  width: 100%;
+  height: 100%;
+}
+.images {
+  height: 100%;
+}
+
+
+/* ================ Progress Bar area css with bootstrap ================== */
+
+
+.bar-area .progress {
+    margin-bottom: 30px;
+    overflow: visible;
+    position: relative;
+}
+.bar-area:last-child .progress {
+    margin-bottom: 0px;
+    background-color: #343849;
+}
+.bar-area:last-child .progress-bar {
+    background-color: #fff;
+}
+.progress-bar span {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/* ================ Round Image Creative Section Css ================== */
+
+.section-feature {
+	position: relative;
+	padding: 60px 0;
+	z-index: 1;
+	background: #f9f9f9;
+	margin: 50px 0;
+	overflow: hidden;
+}
+.section-feature:after {
+	position: absolute;
+	content: "";
+	background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+	z-index: -1;
+	height: 420px;
+	width: 420px;
+	top: calc(50% - 210px);
+	left: calc(50% - 210px);
+	border-radius: 50%;
+}
+
+
+.feature-wrap i.fa {
+    font-size: 80px;
+    color: #E4B3B8;
+    line-height: 118px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    position: absolute;
+    left: calc(50% - 65px);
+    top: calc(50% - 65px);
+}
+.feature-icon {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 10px;
+    transition: .3s;
+    background: #fff;
+}
+.feature-wrap {
+  position: relative;
+  padding-left: 180px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+}
+.icon-right {
+    text-align: right;
+    padding-right: 180px;
+    padding-left: 0;
+    float: right;
+}
+.icon-right .feature-icon {
+  right: 0;
+  left: auto;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.padd2 {
+  padding-left: 270px;
+  padding-right: 0;
+}
+.padd2 .feature-icon {
+  left: 90px;
+}
+.padd1 {
+    padding-right: 270px;
+    padding-left: 0;
+}
+.padd1 .feature-icon {
+  right: 90px;
+}
+.feature-icon:hover {
+    box-shadow: 0 0 30px #ddd;
+}
+.content-area {
+    max-width: 270px;
+}
+
+.content-area p {
+  font-size: 15px;
+}
+.content-area h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+
+
+/* ================ Round Image Creative Section Css ================== */
+
+.section-row {
+	padding: 50px 0;
+}
+.bg1 .bg {
+	background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+}
+.bg2 .bg {
+	background: #ddd url(../img/bg2.jpg) no-repeat center center / cover;
+}
+.bg3 .bg {
+	background: #ddd url(../img/bg3.jpg) no-repeat center center / cover;
+}
+.bg4 .bg {
+	background: #ddd url(../img/bg4.jpg) no-repeat center center / cover;
+}
+.single-box-wrap {
+  position: relative;
+}
+.single-box {
+    position: relative;
+    background: #fff;
+    border-bottom: 5px solid #848B97;
+    margin-bottom: 50px;
+    padding: 40px 30px 30px 100px;
+}
+.single-box h3 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.single-box p {
+  line-height: 24px;
+}
+.bg {
+    height: 100%;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+}
+.box-no {
+  font-size: 50px;
+  position: absolute;
+  left: 20px;
+  top: 30px;
+  opacity: .5;
+}
+.single-box::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100px;
+    background: #ddd;
+    left: 20px;
+    top: 50px;
+    transform: rotate(134deg);
+}
+.bg2 .single-box {
+	border-color: #BCD9E4;
+}
+.bg3 .single-box {
+	border-color: #05D1F7;
+}
+.bg4 .single-box {
+	border-color: #212121;
+}
+
+
+/* ================ Food area Css ================== */
+
+.section-food {
+	margin: 100px 0;
+	padding: 50px 0;
+}
+.food-box-bg1 {background: #ddd url(../img/food1.jpg) no-repeat center center / cover;}
+.food-box-bg2 {background: #ddd url(../img/food2.jpg) no-repeat center center / cover;}
+.food-box-bg3 {background: #ddd url(../img/food3.jpg) no-repeat center center / cover;}
+
+
+.food-bg {
+  height: 300px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.food-box-info {
+  background: #F3F3F3;
+  text-align: center;
+  padding: 30px;
+  border-top: 5px solid #D5973A;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: -100px;
+  transition: .3s;
+}
+.food-box-info h3 {
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 20px 0;
+  color: #D5973A;
+  transition: .3s;
+  letter-spacing: 2px;
+}
+.food-box-info p span {
+  font-size: 200%;
+}
+.food-box-info p {
+  color: #333;
+  margin-top: 30px;
+  transition: .3s;
+}
+.food-box-info h2 {
+  font-family: 'Yellowtail', cursive;
+  font-size: 36px;
+  transition: .3s;
+}
+.food-btn {
+  color: #D5973A;
+  border: 1px solid;
+  padding: 8px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.food-btn:hover {
+  box-shadow: 0 0 5px #ddd;
+}
+.food-box-info:hover {
+  background: #D5973A;
+}
+.food-box-info:hover h2 {
+  color: gold;
+}
+.food-box-info:hover p {
+  color: #fff;
+}
+.food-box-info:hover h3 {
+  color: #fff;
+}
+.food-box-info:hover .food-btn {
+  color: #fff;
+}
+
+
+
+/* ================ Food area Css ================== */
+
+
+
+
+
+
+
+

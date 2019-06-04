@@ -1,0 +1,168 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+    transition: all 0.3s ease; 
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+
+
+
+.tab-list {
+  padding-bottom: 30px;
+  border-bottom: 2px solid #999;
+}
+.tab-list li {
+  display: inline-block;
+}
+.tab-list li a {
+  position: relative;
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 30px;
+  background: #333;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+.tab-list li a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -32px;
+  width: 100%;
+  height: 2px;
+  background: #53fb14;
+  opacity: 0;
+  visibility: hidden;
+}
+.tab-list li a.active:before {
+  opacity: 1;
+  visibility: visible;
+}
+h2 {
+    margin: 30px 0;
+    color: #333;
+}
+
+.tab-area .tab-list .active {
+    color: #53fb14;
+}
+
+
+
+
+
+/* Section bottom*/
+
+
+
+.section-bg {
+    background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.section-bg:after {
+    background: #000;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+}
+
+
+.content p {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  color: #baa42f;
+}
+.content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #baa42f;
+  position: relative;
+  padding-bottom: 20px;
+}
+.content h1:after {
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  left: calc(50% - 50px);
+  height: 3px;
+  background: #baa42f;
+  content: "";
+  border-radius: 3px;
+}
+.content h6, .content h3 {
+  color: #baa42f;
+  text-transform: capitalize;
+}
+.content a.btn {
+  color: #baa42f;
+  border: 1px solid;
+  margin-top: 20px;
+}
+.content-area {
+  border: 10px solid;
+  padding: 50px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

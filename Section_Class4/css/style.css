@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size:14px;
+	color:#000;
+	font-family: sans-sarif, arial !important;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+		text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+img {
+	width:100%;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+.top-panel h2 {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.top-panel h2:after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 5px;
+  background: #d1d116;
+  left: calc(50% - 40px);
+  top: ;
+  bottom: 0px;
+}
+.top-panel h2:before {
+  content: "";
+  background: green;
+  position: absolute;
+  width: 26px;
+  height: 5px;
+  bottom: 0;
+  left: calc(50% - 13px);
+  z-index: 1;
+}
+
+.single-box h3 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+.single-box i.fa {
+  font-size: 56px;
+  color: #818144;
+}
+.top-panel p {
+  margin-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+

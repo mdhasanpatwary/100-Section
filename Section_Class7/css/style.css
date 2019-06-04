@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size:14px;
+	color:#000;
+	font-family: sans-sarif, arial !important;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background: linen;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+		text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+img {
+	width:100%;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+
+.section {
+	background: #fff;
+	margin: 100px 0;
+}
+.section-title h3 {
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.section-title h3:after {
+  position: absolute;
+  content: "";
+  background: #f1f1f1;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 80px;
+  border-radius: 5px;
+}
+.section-title h3:before {
+  content: "";
+  background: #2424e4;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  width: 60px;
+  z-index: 1;
+  border-radius: 5px;
+}
+.section-title {
+  padding: 50px 0;
+}
+
+.staff-meta h3 {
+  text-transform: uppercase;
+}
+.staff-meta p {
+  margin-top: -5px;
+}
+.staff-meta {
+  margin: 20px 0 30px 0;
+}
+.staff-describe p {
+  font-size: 15px;
+}
+.slider {
+	position: relative;
+}
+.slider .owl-nav {
+
+    position: absolute;
+    right: 0;
+    top: -70px;
+
+}
+.slider .owl-nav div:hover {
+
+    background: #2727d7;
+    color: #fff;
+
+}
+.slider .owl-nav div {
+    display: inline-block;
+    background: #f1f1f1;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 34px;
+    font-size: 150%;
+    margin-left: 1px;
+	transition: all ease .3s;
+}
+.owl-carousel .owl-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+

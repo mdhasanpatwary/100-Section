@@ -1,0 +1,227 @@
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/* Link style
+------------------------------ */
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid
+}
+a:hover {
+	text-decoration: none
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Titillium Web', sans-serif;
+	color: #212121;
+	margin: 0 0 15px;
+}
+h1{
+	font-size: 40px;
+	line-height: 50px;
+}
+h2{
+	font-size: 34px;
+	line-height: 44px;
+}
+h3{
+	font-size: 22px;
+	line-height: 30px;
+}
+h4{
+	font-size: 20px;
+	line-height: 26px;
+}
+h5{
+	font-size: 18px;
+	line-height: 22px;
+}
+h6{
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: "Titillium Web",sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:active:focus, 
+.btn-primary:active:hover {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+/* ================ Main css ================== */
+
+
+.section-title {
+  margin-bottom: 60px;
+}
+.section-title h2 {
+  text-transform: capitalize;
+}
+.team-box img {
+  width: 100%;
+  height: 300px;
+}
+.social-box {
+  background: #559934;
+  text-align: center;
+  height: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: -20px;
+  position: relative;
+}
+.social-box ul li {
+  display: inline-block;
+}
+.social-box ul li a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  line-height: 40px;
+  margin: 0 3px;
+}
+.social-box ul li a:hover {
+  background: #fff;
+  color: #559934;
+}
+.team-box-meta {
+  margin: 20px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.team-box-meta h2 span {
+  color: #559934;
+  display: block;
+}
+.team-box-meta h4 span {
+  color: #559934;
+  font-size: 70%;
+  display: block;
+  text-transform: lowercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

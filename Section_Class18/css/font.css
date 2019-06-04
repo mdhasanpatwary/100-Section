@@ -1,0 +1,14 @@
+@font-face{
+	font-family:"PlayfairDisplay";
+	src:url("../fonts/PlayfairDisplay-Regular.eot") format("eot"),
+	url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+	url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+	url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+}
+@font-face{PlayfairDisplay-Regular
+	font-family:"Ubuntu";
+	src:url("../fonts/Ubuntu-Light.eot") format("eot"),
+	url("../fonts/Ubuntu-Light.woff") format("woff"),
+	url("../fonts/Ubuntu-Light.ttf") format("truetype"),
+	url("../fonts/Ubuntu-Light.svg#Ubuntu-Light") format("svg");
+}

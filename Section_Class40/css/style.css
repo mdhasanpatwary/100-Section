@@ -1,0 +1,255 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+    transition: all 0.3s ease; 
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+	margin: 0;
+}
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+.bg {
+    background: #ddd url(../img/bg50.jpg) no-repeat center center / cover;
+    padding-top: 50px;
+}
+
+
+.box-wrap {
+  overflow: hidden;
+  box-shadow: 0 0 50px #5a5a5a;
+}
+.single-box {
+  width: 33.333333%;
+  float: left;
+  border-right: 2px solid #ddd;
+    text-align: center;
+}
+.single-box:last-child {
+  border-right: none;
+}
+.icon {
+  width: 100%;
+  height: 200px;
+  background: transparent;
+  display: flex;
+}
+
+.content {
+  background: #fff;
+  padding-bottom: 50px;
+}
+.icon img {
+  width: 80%;
+  height: 60%;
+  align-self: center;
+}
+.content h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #5DB3FF;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.content h2:after {
+  content: "";
+  background: #5DB3FF;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  left: calc(50% - 15px);
+  bottom: 0;
+  border-radius: 5px;
+}
+.content h1 {
+  position: relative;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #FF6463;
+  font-size: 50px;
+}
+.content h1::before {
+  position: absolute;
+  content: "$";
+  left: 110px;
+  top: 0px;
+  font-size: 20px;
+}
+.content h1::after {
+  content: "/mo";
+  font-size: 22px;
+  position: absolute;
+  bottom: 5px;
+  left: ;
+  right: 80px;
+}
+.boxed-list {
+  text-align: left;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
+.boxed-list li a {
+  color: #5EB1FF;
+  padding: 8px 0;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.boxed-btn {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background: #5DB3FF;
+  padding: 10px 30px;
+  transition: .3s;
+  border-radius: 5px;
+}
+.boxed-btn:hover {
+  background: #FF6463;
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

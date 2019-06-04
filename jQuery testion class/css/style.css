@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:300,400,500,600,700');
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+   font-family: 'Muli', sans-serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+  /* ======== jQuery Testion Section ========== */
+.section-margin {
+  margin: 200px 0;
+}
+.jquery-section {
+  background: #ddd;
+  min-height: 500px;
+  position: relative;
+}
+.box {
+  height: 300px;
+  width: 100%;
+  background: tomato;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.box h1 {
+  align-self: center;
+  font-weight: 900;
+  color: red;
+}
+.golok {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: green;
+  border-radius: 50%;
+}
+
+.top {
+    font-weight: 800;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    background: tomato;
+    text-align: center;
+    line-height: 50px;
+    color: red;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+
+.para {
+  width: 300px;
+}
+.para a {
+  display: block;
+  background: orange;
+  padding: 15px;
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  transition: .3s;
+}
+
+.para a:hover {
+  background: red;
+  color: #fff;
+}
+button {
+  padding: 0 2px;
+}
+
+.appenddiv {
+  background: #fff;
+  padding: 10px;
+  min-height: 300px;
+}
+
+
+
+.dimention {
+  background: #72e172;
+  border: 10px solid tomato;
+}
+.dimention h2 {
+  padding: 50px;
+  border: 10px solid aliceblue;
+  margin: 50px;
+  color: #fff;
+  font-weight: 900;
+  text-align: center;
+  background: red;
+}
+.output {
+  margin-top: 20px;
+  background: #fff;
+  padding: 0 10px;
+}
+.button-area {
+  margin-bottom: 10px;
+}
+
+tbody td {
+  padding-bottom: 10px;
+}
+.xml-show {
+  background: #f9cfcf;
+  height: 100%;
+  padding: 10px;
+}
+.xml-show ul.xmls li {
+  padding: 5px;
+  color: red;
+  text-transform: capitalize;
+}
+
+
+.add-class-animation {
+  width: 800px;
+  padding: 14px;
+  background: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.add-class-animation.add {
+  width: 500px;
+  padding: 10px;
+  background: #f9dada;
+  text-align: center;
+  margin: 0 auto;
+  border: 10px solid tomato;
+}
+
+
+/* jquery-ui effect css */
+.i-effect {
+
+}
+.ui-effect-box p {
+    height: 247px;
+    width: 300px;
+    margin: 0px auto;
+    background: orange;
+    color: red;
+    font-size: 23px;
+    font-weight: 900;
+    padding: 10px;
+    line-height: 25px;
+}
+
+

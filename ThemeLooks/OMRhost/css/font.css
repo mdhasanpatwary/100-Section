@@ -1,0 +1,14 @@
+@font-face{
+	font-family:"DroidSerif-Bold";
+	src:url("../fonts/DroidSerif-Bold.eot") format("eot"),
+	url("../fonts/DroidSerif-Bold.woff") format("woff"),
+	url("../fonts/DroidSerif-Bold.ttf") format("truetype"),
+	url("../fonts/DroidSerif-Bold.svg#DroidSerif-Bold") format("svg");
+}
+@font-face{
+	font-family:"DroidSerif";
+	src:url("../fonts/DroidSerif.eot") format("eot"),
+	url("../fonts/DroidSerif.woff") format("woff"),
+	url("../fonts/DroidSerif.ttf") format("truetype"),
+	url("../fonts/DroidSerif.svg#DroidSerif") format("svg");
+}

@@ -1,0 +1,126 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+
+.header {
+  margin: 50px 0;
+}
+.main-menu ul li {
+  display: inline-block;
+  position: relative;
+}
+.main-menu ul li a {
+  background: #333;
+  display: block;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: .3s;
+}
+.main-menu ul li a:hover {
+  background: #666;
+}
+
+
+
+.main-menu ul ul {
+  position: absolute;
+  width: 250px;
+  top: 70px;
+  padding: 14px 0;
+  background: #333;
+  opacity: 0;
+  z-index: 9;
+  visibility: hidden;
+  transition: .5s;
+}
+.main-menu ul ul li {
+  display: block;
+}
+.main-menu ul ul li a {
+  padding: 14px;
+  text-transform: capitalize;
+}
+.main-menu ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 40px;
+}
+.main-menu ul ul ul {
+  left: 250px;
+}
+.main-menu ul ul > li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

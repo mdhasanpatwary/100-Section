@@ -1,0 +1,151 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+.wrap {
+	background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#265ebf+1,e52bdf+37,f22660+67,f28f82+100 */
+	background: #265ebf; /* Old browsers */
+	background: -moz-linear-gradient(-45deg, #265ebf 1%, #e52bdf 37%, #f22660 67%, #f28f82 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, #265ebf 1%,#e52bdf 37%,#f22660 67%,#f28f82 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, #265ebf 1%,#e52bdf 37%,#f22660 67%,#f28f82 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#265ebf', endColorstr='#f28f82',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	padding: 50px 0;
+}
+.boxed {
+	background: #ddd url(../img/boxed-bg.jpg) no-repeat center center / cover;
+    padding: 0 50px;
+}
+.main-menu li {
+  display: inline-block;
+}
+.main-menu {
+  text-align: right;
+}
+.main-menu li a {
+  color: #333;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 18px 0;
+  padding-left: 50px;
+  display: block;
+}
+.logo h1 a {
+  color: #333;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  padding: 20px 0;
+}
+.main-menu li a:hover {
+  text-shadow: 0 0 50px #333;
+}
+
+
+
+.footer-right {
+  text-align: right;
+}
+.footer-right a i.fa {
+  color: #333;
+  padding: 0 0 0 16px;
+  font-size: 18px;
+}
+.footer-right a i.fa:hover {
+  text-shadow: 0 0 10px #F22E63;
+}
+.footer {
+  padding: 20px 0;
+}
+.table2 h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.table2 {
+  max-width: 500px;
+  padding: 100px 0;
+}
+.table2 p {
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

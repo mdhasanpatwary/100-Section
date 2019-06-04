@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+	<employe>
+		<name>MD_HASAN PATWARY</name>
+		<skill>HTML, CSS, BOOTSTRAP, JQUERY AND PHP</skill>
+		<company>IT WORKERS TEAM</company>
+		<product>SOFTWERE DEVELOPMENT AND UNIVERSITY MANAGEMENT SYSTEM</product>
+	</employe>
+
+	<employer>
+		<zender>male</zender>
+		<brother>joshim, riyaz, ripon</brother>
+		<father>Have</father>
+	</employer>
+
+</person>

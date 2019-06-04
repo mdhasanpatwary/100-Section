@@ -1,0 +1,252 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: blue;
+    transition: all 0.3s ease; 
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #fff;
+	margin: 0;
+}
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+    margin: 80px 0;
+    background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+.bg {
+    background: #ddd url(../img/bg2.jpg) no-repeat center center / cover;
+    margin: 70px 0;
+}
+
+.main-bg {
+  background-color: #2A3041;
+  margin: -70px 0;
+  padding: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.image {
+  text-align: right;
+  height: 100%;
+}
+.content {
+  color: #fff;
+  padding: 0 20px;
+}
+.content h2 {
+  color: #fff;
+  font-size: 46px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.content p {
+  font-weight: 550;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.content h5 {
+  color: #fff;
+  text-transform: capitalize;
+  position: relative;
+  padding-left: 40px;
+    font-weight: 700;
+}
+.content h5:before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1.5px;
+}
+.content h5 span {
+  font-size: 70%;
+  opacity: .5;
+}
+.read-more-btn {
+  display: inline-block;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px 30px;
+  font-size: 18px;
+  border: 1px solid #f2f277;
+  margin-top: 30px;
+}
+.read-more-btn:hover {
+  color: #fff;
+  opacity: .8;
+}
+.image img {
+    width: 100%;
+    height: 408px;
+}
+.content-ab {
+    position: relative;
+  padding: 50px;
+}
+.content-ab:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-left: 2px solid #fff;
+  border-top: 2px solid #fff;
+  left: 0;
+  top: 0;
+}
+.content-ab:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #ffff;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

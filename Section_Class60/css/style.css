@@ -1,0 +1,125 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 24px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+.section-title {
+  max-width: 500px;
+  text-align: center;
+  margin: 100px auto;
+}
+.section-title h3 {
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.section-title i.fa {
+  font-size: 50px;
+}
+.bg-wrap {
+  position: relative;
+  z-index: 1;
+}
+.bg-img {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+}
+.content h4 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.content {
+  padding-bottom: 200px;
+}
+
+
+
+
+.header ul li {
+  display: inline-block;
+}
+.header ul {
+  text-align: center;
+}
+.header ul li a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 12px;
+}
+.header {
+  background: #999;
+  padding: 10px 0;
+}
+.is-sticky {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+}
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,86 @@
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px) {
+   
+}
+
+/* Moblie devices (mobile, 0px to 768px) */
+@media only screen and (max-width:767px) {
+	.video-area-bg {
+		width: 100%;
+	}
+
+	.list-content h2 ,
+	ul.check-icons li:before,
+	 ul.check-icons li a,
+	.list-content p {
+		color: #fff;
+	} 
+	ul.check-icons{
+		padding-top: 120px;
+	}
+	.video-play-btn {
+	  width: 80px;
+	  height: 80px;
+	  background: blue;
+	  position: absolute;
+	  left: calc(50% - 40px);
+	  top: calc(50% - 40px);
+	  color: #fff;
+	  font-size: 30px;
+	  border-radius: 50%;
+	  text-align: center;
+	  line-height: 78px;
+	  padding-left: 5px;
+	  z-index: 1;
+	}
+
+
+
+
+
+}
+
+/* Wide Mobile Layout: (480px to 767px) */
+@media only screen and (min-width:480px) and (max-width:767px) {
+	
+	.video-area-bg {
+		width: 100%;
+	}
+
+	.list-content h2 ,
+	ul.check-icons li:before,
+	 ul.check-icons li a,
+	.list-content p {
+		color: #fff;
+	} 
+	ul.check-icons{
+		padding-top: 120px;
+	}
+	.video-play-btn {
+	  width: 80px;
+	  height: 80px;
+	  background: blue;
+	  position: absolute;
+	  left: calc(50% - 40px);
+	  top: calc(50% - 40px);
+	  color: #fff;
+	  font-size: 30px;
+	  border-radius: 50%;
+	  text-align: center;
+	  line-height: 78px;
+	  padding-left: 5px;
+	  z-index: 1;
+	}
+
+
+
+
+
+
+}

@@ -1,0 +1,184 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #888888;
+	background: #fff;
+	line-height: 18px;
+}
+a, a:hover{
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #333;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+    display: flex;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+
+.single-box {
+  box-shadow: 0 0 2px #aba6a6;
+  flex: 1;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+.box-top {
+  background: #F9F9F9;
+  padding: 40px;
+  min-height: 270px;
+  transition: .3s;
+}
+.box-top h3 {
+  color: #61727F;
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.box-top h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  position: relative;
+  font-size: 36px;
+  display: inline-block;
+}
+.box-top h2 span {
+    margin-top: -4px;
+    display: block;
+    position: absolute;
+    left: -20px;
+    font-size: 32px;
+}
+.box-top p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 21px;
+}
+.box-bottom ul li {
+  padding-bottom: 16px;
+  font-weight: 700;
+}
+.box-bottom {
+  padding: 50px;
+  background: #fff;
+  transition: .3s;
+}
+.single-box:nth-child(2) .box-bottom ul li {
+  padding-bottom: 12px;
+}
+.single-box:nth-child(2) .box-bottom {
+  padding-top: 45px;
+}
+.boxed-btn {
+    color: #FF3141;
+    border: 1px solid;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 30px;
+    display: inline-block;
+    font-weight: 700;
+    transition: .3s;
+    opacity: .8;
+    text-transform: capitalize;
+}
+.boxed-btn:hover {
+    opacity: 1;
+}
+.single-box:nth-child(2) .box-bottom .boxed-btn {
+    margin-top: 22px;
+}
+
+.single-box.active .box-top {
+  background: #FF3141;
+  color: #fff;
+  border-radius: 3px 3px 0 0;
+  transition: .3s;
+}
+.single-box.active .box-top h2, .single-box.active .box-top h3 {
+  color: #fff;
+}
+.single-box.active {
+  transform: scale(1.1);
+  border-radius: 3px;
+  box-shadow: 0 10px 20px #a78585;
+  transition: .3s;
+}
+.single-box.active .box-bottom .boxed-btn {
+  background: #FF3141;
+  color: #fff;
+}
+.single-box.active .box-top::after {
+    content: "Featured";
+    position: absolute;
+    transform: rotate(45deg);
+    background: #fff;
+    color: #444;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2px 30px;
+    right: -27px;
+    top: 23px;
+}
+.single-box.active .box-top {
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

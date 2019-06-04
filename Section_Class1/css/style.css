@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size:14px;
+	color:#000;
+	font-family: sans-sarif, arial !important;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	background: #ddd;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+		text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	
+}
+img {
+	width:100%;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+
+
+
+#section {
+  background: #fff;
+  margin: 50px 0;
+  position: relative;
+}
+.section-bg {
+  background: url(../img/1.jpg) center center / cover;
+  width: 60%;
+  height: 100%;
+  position: absolute;
+}
+.section-bg:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #c8560f;
+  opacity: .5;
+}
+.contact-form {
+  padding: 70px 0;
+}
+.contact-form h2 {
+  color: #ddd;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -117px;
+  top: 186px;
+}
+input, p textarea {
+  width: 100%;
+  padding: 10px;
+  margin-block-start: 10px;
+  border-radius: 2px;
+  border: none;
+}
+input:focus, p textarea:focus {
+  outline: 1px solid #ddd;
+}
+input[type=submit] {
+  width: auto;
+  text-transform: uppercase;
+  padding: 12px 27px;
+  cursor: pointer;
+  color: #c8560f;
+  font-weight: 700;
+}
+.appoinment-content {
+  padding: 70px 0 60px 100px;
+}
+.appoinment-content h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.appoinment-content ul li {
+  font-size: 16px;
+  padding: 8px;
+}
+
+
+.appoinment-content ul li i.fa {
+  margin-right: 13px;
+  padding: ;
+  padding-left: 14px;
+}
+.submit-box {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 25px;
+  background: #434398;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+}
+.submit-box:hover {
+  color: #fff;
+  background: #3131a7;
+}
+input {
+}
+input[type=submit]:hover {
+  background: #d2bcbc;
+}
+
+
+
+
+
+
+
+
+
+
+

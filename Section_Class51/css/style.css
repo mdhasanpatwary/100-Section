@@ -1,0 +1,161 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+.background-bg {
+    background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;
+    height: 600px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    cursor: pointer;
+}
+.bg2 {
+    background: #ddd url(../img/bg2.jpg) no-repeat center center / cover;
+}
+.bg3 {
+    background: #ddd url(../img/bg3.jpg) no-repeat center center / cover;
+}
+.bg4 {
+    background: #ddd url(../img/bg4.jpg) no-repeat center center / cover;
+}
+.bg5 {
+    background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+}
+
+
+
+.section-title {
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-weight: 700;
+}
+.section-title h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.section-padding .col-md-4, .section-padding .row {
+  padding: 0;
+  margin: 0;
+}
+.background-bg.half {
+  height: 300px;
+}
+.content {
+  align-self: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.background-bg::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  left: 5%;
+  top: 5%;
+  background: #000;
+  opacity: 0;
+  z-index: -1;
+    transition: .3s;
+}
+.content i.fa {
+  color: #4B7637;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.content h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 22px;
+}
+.content p {
+  color: #fff;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+
+.background-bg:hover:before {
+    opacity: .7;
+}
+.background-bg:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

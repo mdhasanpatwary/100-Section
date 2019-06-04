@@ -1,0 +1,99 @@
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width:992px) and (max-width:1200px) { 
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width:768px) and (max-width:991px) {
+   
+    .header {
+        padding: 10px 0;
+    }
+    .hero-area-top-content h2 {
+      color: red;
+    }   
+    .hero-area-top-content h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .hero-area-top-content {
+        margin-bottom: 40px;
+    }    
+    
+    
+}
+
+/* Moblie devices (mobile, 0px to 768px) */
+@media only screen and (max-width:767px) {
+    
+    .hero-area-top-content h2 {
+      color: green;
+    }  
+    .section-bg {
+        height: auto;
+    }  
+    .logo {
+        text-align: center;
+    }   
+    .main-menu {
+        text-align: center;
+    }   
+    .header {
+        padding-top: 25px;
+        margin-bottom: 40px;
+        position: relative;
+    }   
+    .main-menu ul li a {
+        padding: 7px 20px;
+        margin-left: 0;
+    }   
+    .logo h1 {
+        margin-bottom: 16px;
+    }   
+    .hero-area-top-content h2 {
+        font-size: 20px;
+    }   
+    .hero-area-top-content p {
+        font-size: 14px;
+        letter-spacing: .5px;
+        word-spacing: 2px;
+    }    
+    .hero-area-top-content {
+        margin-bottom: 50px;
+    }   
+    .hero-area-bottom-content p {
+        font-size: 12px;
+    }    
+    .footer {
+        position: relative;
+        text-align: center;
+    }    
+    .footer-menu {
+        text-align: center;
+        margin-top: 8px;
+    }   
+    .footer-menu li a {
+        padding-left: 4px;
+        padding-right: 4px;
+    }   
+    .hero-area-bottom-content form input[type="email"] {
+        width: 100%;
+    }   
+    .hero-area-bottom-content form button {
+        width: 50%;
+    }    
+    .social-area {
+        margin-bottom: 20px;
+    }    
+
+}
+
+/* Wide Mobile Layout: (480px to 767px) */
+@media only screen and (min-width:480px) and (max-width:767px) {
+ 
+    .header {
+        margin-bottom: 20px;
+    }  
+    
+    
+}

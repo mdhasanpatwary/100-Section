@@ -1,0 +1,356 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Poppins:300,400,500,600,700');
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+   font-family: 'Muli', sans-serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+    transition: all 0.3s ease; 
+}
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Poppins', sans-serif;
+	color: #212121;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+/* ================ Header Css ================== */
+
+.header {
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+}
+.header-left {
+  margin: 0;
+  line-height: 15px;
+}
+.header-left a {
+  color: #000;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+}
+.header-left a span {
+  position: absolute;
+  right: -8px;
+  top: 5px;
+  font-size: 10px;
+}
+
+/* Menu Triger css
+------------------------------ */
+.menu-triger {
+  display: inline-block;
+  width: 30px;
+  cursor: pointer;
+}
+.menu-triger span {
+  display: block;
+  background: #000;
+  height: 3px;
+  transition: all .3s ease;
+}
+.menu-triger span:nth-child(2) {
+  margin: 5px 0;
+}
+.menu-triger:hover span:nth-child(1), .menu-triger:hover span:nth-child(3) {
+  margin: 0 5px;
+}
+
+/* ================ Portfolio item section Css ================== */
+
+.portfolio-bg1 { background-image: url(../img/bg2.jpg); }
+.portfolio-bg2 { background-image: url(../img/bg4.jpg); }
+.portfolio-bg3 { background-image: url(../img/bg5.jpg); }
+.portfolio-bg4 { background-image: url(../img/bay.png); }
+.portfolio-bg5 { background-image: url(../img/bg5.jpg); }
+.portfolio-bg6 { background-image: url(../img/bg6.jpeg); }
+.portfolio-bg7 { background-image: url(../img/bg7.jpg); }
+.portfolio-bg8 { background-image: url(../img/bg8.jpg); }
+.portfolio-bg9 { background-image: url(../img/bg9.jpg); }
+.portfolio-bg10 { background-image: url(../img/bg10.jpg); }
+.portfolio-bg11 { background-image: url(../img/bg.jpg); }
+
+.single-portfolio-item {
+    background-color: #ddd;
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 25%;
+    float: left;
+    height: 300px;
+    transition: all .5s ease;
+}
+.portfolio-item {
+  overflow: hidden;
+}
+.boxed-portfolio {
+  width: 50%;
+  height: 600px;
+}
+.long-portfolio {
+  height: 600px;
+}
+.single-portfolio-item-hover-effect {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s ease;
+}
+.single-portfolio-item-tablecell {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000;
+  transition: all .5s ease;
+}
+.single-portfolio-item-tablecell p a {
+  opacity: .5;
+  margin-top: 20px;
+  transition: all .5s ease;
+  color: #000;
+  display: inline-block;
+}
+.single-portfolio-item-hover-effect h3 a {
+  color: #000;
+  opacity: .8;
+  transition: .2s;
+}
+.single-portfolio-item-hover-effect h3 a:hover, .single-portfolio-item-tablecell p a:hover {
+  opacity: 1;
+}
+.single-portfolio-item:hover .single-portfolio-item-hover-effect {
+  opacity: 1;
+  visibility: visible;
+}
+.single-portfolio-item:hover {
+  background-size: 220%;
+}
+
+
+/* ================ Footer Css ================== */
+
+.footer {
+    padding: 50px 0;
+    background: #6146DA;
+}
+.footer, .footer a {
+    color: #fff;
+    font-size: 15px;
+}
+.footer-logo h1 {
+  margin: 0;
+  line-height: 15px;
+}
+.footer-logo h1 a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+}
+.footer-logo h1 a span {
+  position: absolute;
+  right: -8px;
+  top: 5px;
+  font-size: 10px;
+}
+.footer p {
+    opacity: .5;
+    transition: .3s;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.footer-menu ul li a {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  display: inline-block;
+  opacity: .5;
+  font-weight: 500;
+  transition: .3s;
+}
+.footer-menu ul li a:hover, .footer p:hover {
+  opacity: 1;
+}
+
+/* footer fixed css
+------------------------------ */
+.portfolio-items-section {
+  position: relative;
+  z-index: 1;
+  background: #ddd;
+  overflow-x: hidden;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+
+/* ================ Off Canvas Menu Css ================== */
+
+
+
+.off-canvas-menu {
+  position: fixed;
+  right: 0;
+  top: -100%;
+  width: 40%;
+  height: 100%;
+  background: #fff;
+  z-index: 10;
+  padding-left: 50px;
+  transition: .5s;
+}
+.close-btn {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 50px;
+  justify-content: center;
+}
+.close-btn i.fa {
+  align-self: center;
+  font-size: 24px;
+  transition: .3s;
+  color: #ddd;
+  cursor: pointer;
+}
+.close-btn:before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #0000002b;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+.menu ul li a {
+  font-size: 26px;
+  text-transform: capitalize;
+  font-weight: 700;
+  display: block;
+  padding: 10px;
+}
+.menu ul {
+  padding-bottom: 150px;
+  align-self: center;
+}
+.menu {
+  display: flex;
+  height: 100%;
+}
+.off-canvas-bottom {
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+}
+.off-canvas-bottom p {
+  background: #f1f1f1;
+  width: 300px;
+  border-radius: 10px;
+  padding: 4px;
+  color: #333;
+  margin-bottom: 20px;
+}
+.off-canvas-bottom span a i.fa {
+  margin-right: 10px;
+  display: inline-block;
+  color: #999;
+  transition: .3s;
+  font-size: 18px;
+}
+.off-canvas-bottom span a i.fa:hover {
+  color: #666;
+}
+.off-canvas-overlay {
+    position: absolute;
+    z-index: -1;
+    background: #000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 200%;
+    content: "";
+    opacity: .0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+
+/* off canvas menu effect */
+.off-canvas-menu.canvas {
+  top: 0;
+}
+.off-canvas-overlay.canvas {
+    z-index: 9;
+    visibility: visible;
+}
+.close-btn:hover i.fa {
+  font-size: 30px;
+  color: #ccc;
+}
+.header.headroom--pinned {
+    position: fixed;
+    top: 0;
+    transition: all .5s ease;
+}
+.header.headroom--unpinned {
+    position: fixed;
+    top: -100px;
+    transition: all .5s ease;
+}
+
+
+
+

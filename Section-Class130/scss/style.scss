@@ -1,0 +1,531 @@
+@import 'mixins';
+@import 'responsive';
+
+
+$black:#000;
+$white:#fff;
+$blue:#2C89E0;
+$timeline-bg:#042639;
+$hotel-color:#D33F5F;
+
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+ul {
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	transition: all .3s ease;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.section-padding {padding:60px 0;}
+
+
+
+/*========= Header Section =========*/
+header {
+    background: #181818;
+    padding:20px 0;
+}
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    position: relative;
+}
+.logo {
+    text-decoration: none;
+    color: #777;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 40px;
+}
+nav > ul {
+    float: right;
+}
+nav > ul > li {
+    text-align: center;
+    line-height: 40px;
+    margin-left: 70px;
+}
+nav > ul li ul li {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+}
+nav ul li:hover {
+    cursor: pointer;
+    position: relative;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li:hover > a {
+    color: #777;
+}
+nav > ul > li > a {
+    cursor: pointer;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-decoration: none;
+}
+nav > ul > li {
+    float: left;
+}
+nav a {
+    color: white;
+}
+nav > ul li ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    z-index: 2000;
+    background: red;
+}
+nav > ul li ul li > a {
+    text-decoration: none;
+}
+[type="checkbox"],
+label {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    label {
+        display: block;
+        background: #222;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+    label:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #777;
+        margin: 7px 5px;
+        box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
+    }
+    [type="checkbox"]:checked ~ ul {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        right: 20px;
+        left: 20px;
+    }
+    nav a {
+        color: #777;
+    }
+    nav ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: left;
+        background: #222;
+        text-indent: 20px;
+    }
+    nav > ul > li {
+        margin-left: 0px;
+    }
+    nav > ul li ul li {
+        display: block;
+        float: none;
+    }
+    nav > ul li ul {
+        display: block;
+        position: relative;
+        width: 100%;
+        z-index: 9999;
+        float: none;
+    }
+    h1 {
+        font-size: 26px;
+    }
+}
+
+
+
+/*========= both Section =========*/
+.section-both {
+	display: none;
+	visibility: hidden;
+	background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;
+	position: relative;
+	z-index: 1;
+	padding: 60px;
+	&:before {
+		position: absolute;
+		content: "";
+		background-color: #042C46;
+		opacity: .7;
+		z-index: -1;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+}
+
+.timeline-title {
+	color: $white;
+	margin-bottom: 60px;
+	h2 {
+		text-transform: uppercase;
+		font-weight: 700;
+		color: $white;
+		margin-bottom: 30px;
+		span {
+			color: $blue;
+		}
+	}
+	p {
+		line-height: 20px;
+	}
+}
+.timeline-area {
+	.single-timeline-item {
+		text-align: center;
+		position: relative;
+		img.timeline-img {
+			width: 150px;
+			height: 150px;
+			margin-bottom: 50px;
+			@include radius(50%);
+		}
+		.timeline-text {
+			position: absolute;
+			background-color:$timeline-bg;
+			color:$white;
+			padding: 20px;
+			width: 300px;
+			left: 140px;
+			top: -10px;
+			text-align: right;
+			font-size: 14px;
+			@include radius(30px);
+			&:after{
+				position: absolute;
+				content: "";
+				width: 0;
+				height: 0;
+				border-top: 15px solid transparent;
+				border-left: 30px solid #042639;
+				border-bottom: 15px solid transparent;
+				top: calc(50% - 15px);
+				right: -30px;
+			}
+			h3 {
+				color: #6868b0;
+				font-size: 22px;
+				margin-bottom: 16px;
+			}
+		}
+		&:nth-child(2n) .timeline-text{
+			background-color: $white;
+			color:$black;
+			right: 140px;
+			left: auto;
+			text-align: left;
+			&:after{
+				left: -30px;
+				border-right: 30px solid $white;
+				border-left: none;
+			}
+		}
+		&:before{
+			height: 100%;
+			width: 2px;
+			background: #CCEDD9;
+			content: "";
+			top: 0;
+			position: absolute;
+			left: calc(50% - 1px);
+			z-index: -1;
+		}
+		&:last-child:before{
+			display: none;
+			visibility: hidden;
+		}
+	}
+}
+
+/*========= Second Section =========*/
+
+
+
+.section-second {
+	display: none;
+	visibility: hidden;
+	position: relative;
+	z-index: 1;
+	padding: 50px 0;
+	&:after{
+		background-color: blue;
+		opacity: .5;
+		z-index: -1;
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+	.timeline-area {
+		margin-top: 30px;
+		.single-timeline-item {
+			width: 150px;
+			margin:0 auto;
+			img.timeline-img {
+				display: block;
+				padding:5px;
+				border: 2px dashed blue;
+			}
+			.timeline-text {
+				width: 350px;
+				height: 180px;
+				left: -400px;
+				top: calc(50% - 90px);
+				h3 {
+					color: #6868b0;
+					font-size: 22px;
+					margin-bottom: 16px;
+				}
+			}
+			&:nth-child(2n) .timeline-text{
+				right: -400px;
+				left: auto;
+			}
+		}
+	}
+}
+
+
+/*========= Service Section =========*/
+.service-section {
+	.single-service-box {
+		position: relative;
+		margin-bottom: 30px;
+		.table-area {
+			display: flex;
+			justify-content: center;
+			background-color: #ddd;
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			.v-middle {align-self: center;
+				h3 {position: static;}
+			}
+		}
+		.service-bg {width: 100%;height: 100%;}
+		.service-bg-hide {opacity: 0}
+		h3 {
+			position: absolute;
+		    background: #f68f8f;
+		    color: #fff;
+		    left: 0;
+		    bottom: -8px;
+		    width: 100%;
+		    text-align: center;
+		    text-transform: uppercase;
+		    font-size: 20px;
+		    padding: 10px;
+		}
+	}
+}
+
+
+/*========= Particle Section =========*/
+
+.section-particle {background: #fba6a6;position: relative;
+	canvas {position: absolute;top: 0;}
+}
+
+
+/*========= Top White Section =========*/
+.section-topwhite {
+	background: #ddd url(../img/swiming.jpg) no-repeat center top / cover;
+	position: relative;
+	z-index: 1;
+	&:after {
+		position:absolute;
+		content: "";
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+	}
+	.section-content { margin-bottom: 200px;
+		h1 {font-family: 'Pacifico', cursive;}
+		p.price {font-size: 20px;color: $hotel-color;font-weight: 700;}
+		a.btn {background: $hotel-color;color: $white;
+			&:hover{background:#F5365F;}
+			&:focus, &:active{	outline: none;}
+		}
+	}
+}
+
+
+/*========= half Section =========*/
+.section-half {
+	position: relative;z-index: 1;margin-top: -95px;
+	.single-box {background: $white;padding:20px;box-shadow: 0 0 5px $hotel-color;
+		i.fa {font-size: 35px;margin-bottom: 14px;}
+		p {text-transform: capitalize;}
+		p span {color: $hotel-color;font-size: 30px;font-weight: 700;}
+	}
+}
+
+/*========= New Section Area =========*/
+.new-section {
+	background: #ddd;
+	margin:50px;
+	text-align: center;
+	.text-zone {
+		h1 {
+			background: #f27373;
+			color: green;
+			font-weight: 900;
+			text-transform: uppercase;
+			margin: 0;
+			padding: 5px;
+		}
+		h4 {
+			background: #43ae43;
+			color: #b43030;
+			font-weight: 700;
+			@extend h1;
+			margin-bottom: 30px;
+		}
+		$var:(p1,solid,red),(p2,dotted,green),(p3,dashed,tomato),(p4,inset,yellow),(p5,dotted,pink),(p6,dotted,#000);
+		@each $class, $style, $color in $var{
+			.#{$class}{border: 5px $style red; background: $color;}
+		}
+
+	}
+}
+
+/*========= chetus section =========*/
+.section-chetus{
+	margin:100px 0;
+	position: relative;
+	z-index: 1;
+	padding: 100px 0;
+	&:before{
+		background: #D8EAF6;
+		position: absolute;
+		left: 0;
+		top:-0;
+		width: 100%;
+		height: 100%;
+		content: "";
+		transform: skewY(-6deg);
+	}
+	.chetus-content {
+		h2 {
+			background: #D14424;
+			padding:10px;
+			margin-bottom: 20px;
+			color: #fff;
+			text-transform: lowercase;
+			font-weight: 700;
+			position: relative;
+			&:before{
+				content: "";
+				height: 50px;
+				width: 50px;
+				background: #D14424;
+				position: absolute;
+				left: -19px;
+				top: 4px;
+				transform: rotate(45deg);
+			}
+			&:after{
+				@extend :before;
+				right: -19px;
+				left: auto;
+				background: #D8EAF6;
+			}
+		}
+	}
+}
+
+
+/*========= Social Mac section =========*/
+.social-mac {
+	background:#333;
+	position: relative;
+	z-index: 1;
+	&:before{
+		position: absolute;
+		content: "";
+		background: url(../img/shape.png) repeat-x;
+		top: -20px;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+	.social-icons {
+		ul{
+
+			li{
+				display: inline-block;
+				a{
+					display: block;
+					width: 35px;
+					height: 35px;
+					color: #fff;
+					border: 1px solid;
+					text-align: center;
+					line-height: 32px;
+					transform: rotate(-45deg);
+					margin-right: 9px;
+					margin-bottom: 13px;
+					transition: .3s;
+					&:hover{
+						border-color: red;
+					}
+					i.fa{
+						transform: rotate(45deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

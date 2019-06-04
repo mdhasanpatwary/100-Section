@@ -1,0 +1,270 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body,
+.full-height { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #fff;
+	background: #fff;
+	line-height: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    max-height: 100%;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+    color: #fff;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: #ddd;
+    transition: all 0.3s ease; 
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #fff;
+	margin: 0;
+    font-weight: 400;
+}
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+
+
+
+
+/*
+    Main Css
+*/
+.section-padding {
+	padding: 100px 0;
+}
+.section-padding.full-height {
+	padding: 0;
+}
+.table {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.section-bg {
+    
+}
+.overlay {
+    background: #ddd url(../img/hd-bg.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+}
+.overlay:after, .single-box::after  {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    opacity: .5;
+    z-index: -1;
+}
+.section-bg2 {
+    background: #ddd url(../img/hd-bg2.jpg) no-repeat center center / cover;
+}
+.section-three {
+    background: #ddd url(../img/hd-bg3.jpg) no-repeat center center / cover;
+}
+.section-four {
+    background: #ddd url(../img/bg.jpg) no-repeat center center / cover;
+}
+.section-five {
+    background: #ddd url(../img/bg2.jpg) no-repeat center center / cover;
+}
+.section-six {
+    background: #ddd url(../img/bg4.jpg) no-repeat center center / cover;
+}
+.section-seven {
+    background: #ddd url(../img/bg5.jpg) no-repeat center center / cover;
+}
+.section-eight {
+    background: #ddd url(../img/bg6.jpeg) no-repeat center center / cover;
+}
+.section-nine {
+    background: #ddd url(../img/bg7.jpg) no-repeat center center / cover;
+}
+.section-ten {
+    background: #ddd url(../img/bg8.jpg) no-repeat center center / cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.single-box {
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.single-box i.fa {
+  font-size: 100px;
+  padding-bottom: 30px;
+}
+.single-box h4 {
+  padding-bottom: 20px;
+}
+.single-box p {
+  line-height: 22px;
+}
+.learn-more-btn {
+  font-weight: 700;
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.megnific-section {
+    transition: 1s;
+}
+.megnific-section i.fa {
+  background: #fff;
+  color: #333;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.megnific-section h2 {
+  padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+.three-content p{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

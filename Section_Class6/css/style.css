@@ -1,0 +1,161 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size:14px;
+	color:#9C9C9C;
+	font-family: sans-sarif, arial !important;
+	-webkit-transition: all 0.5s ease;
+	transition: all .5s ease;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-weight: 700;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+		text-decoration: none;
+}
+img {
+	width:100%;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+.top-content h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.top-content h2 span {
+  color: #38bd38;
+}
+.top-content p {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.top-content {
+  margin-bottom: 40px;
+}
+.single-box {
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: all .5s ease;
+}
+.single-box h3 {
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.icons i.fa {
+  font-size: 60px;
+  color: #666;
+  transition: all .5s ease;
+}
+.list-area {
+  margin: 20px 0;
+  padding-left: 25px;
+  text-align: left;
+}
+.list-area ul li a {
+  display: inline-block;
+  color: #6f5a5a;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 550;
+  transition: all .5s ease;
+}
+.list-area ul li:before {
+  position: absolute;
+  content: "\f00c";
+  font-family: fontAwesome;
+  color: #497b49;
+  left: 0;
+  top: 5px;
+  transition: all .5s ease;
+}
+.list-area ul li.desable:before {
+  position: absolute;
+  content:"\f057";
+  font-family: fontAwesome;
+  color:  #333;
+  left: 0;
+  top: 5px;
+  transition: all .5s ease;
+}
+.list-area ul li {
+  position: relative;
+  padding-left: 30px;
+  transition: all .5s ease;
+}
+.single-box a.round-btn {
+  display: inline-block;
+  color: #3c2323;
+  border: 1px solid #b4a3a3;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin: 20px 0;
+  transition: all .5s ease;
+}
+.icons {
+  margin: 20px 0 10px 0;
+}
+.single-box:hover .icons i.fa {
+  color: #228722;
+}
+.single-box:hover {
+  border: 1px solid #228722;
+}
+.single-box:hover a.round-btn {
+  background: #228722;
+  color: #fff;
+}
+.single-box:hover .list-area ul li:before {
+  color: #228722;
+}
+.single-box:hover .list-area ul li a {
+  color: #000;
+}
+.list-area ul li:hover {
+  padding-left: 35px;
+}
+.single-box:hover .list-area ul li.desable:before {
+	color: red;
+}

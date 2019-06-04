@@ -1,0 +1,301 @@
+
+/* ================= General ==================== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body { 
+	height: 100% 
+}
+body {
+    font-family: sans-serif, serif;
+	color: #61727f;
+	background: #fff;
+	line-height: 18px;
+    max-height: 100%;
+    font-size: 14px;
+}
+
+/* Link style
+------------------------------ */
+a{
+	text-decoration: none;
+    color: #000;
+}
+a:focus {
+	outline: 0 solid;
+}
+a:hover {
+	text-decoration: none;
+	color: #F95244;
+    transition: all 0.3s ease; 
+}
+
+/* Transition elements
+------------------------------ */
+a,
+.navbar a,
+.form-control {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+}
+
+
+/* ================ Typography ================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: sans-serif;
+	color: #212121;
+}
+.btn {
+	color: #fff;
+	padding: 14px 30px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-family: sans-serif;
+	border-radius: 3px;
+	box-shadow: 0 4px 5px rgba(34, 34, 34, 0.2);
+}
+.btn:hover {
+    box-shadow: 0 8px 10px rgba(34, 34, 34, 0.2);
+}
+.btn-primary {
+	background-color: #3452ff;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #3452ff;
+    border-color: #3452ff;
+}
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 400;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+img {
+	max-width:100%;
+	height: auto;
+}
+.flex {
+	display:flex;
+}
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.table-cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.space {
+	justify-content:space-between;
+}
+.floatl {
+	float:left;
+}
+.floatr {
+	float:right;
+}
+.fix {
+	overflow:hidden;
+}
+.clearfix{
+	clear: both;
+}
+.section-padding {
+	padding: 100px 0;
+}
+
+/* ================ section ================== */
+.section-bg {
+    background: #ddd url(../img/hd-bg2.jpg) no-repeat center center / cover;
+    position: relative;
+    height: 100%;
+    z-index: 1;
+}
+.section-bg:after {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    opacity: .7;
+    z-index: -1;
+}
+
+
+
+
+
+/* ================ header ================== */
+
+.logo h1 a {
+  color: #FC5245;
+  font-size: 26px;
+  font-weight: 700;
+}
+.logo h1 a img {
+    padding-right: 10px;
+    width: 40px;
+}
+.logo h1 {
+  margin: 0;
+  line-height: 0;
+  padding: 3px 0;
+}
+.main-menu ul li {
+  display: inline-block;
+}
+.main-menu {
+  text-align: right;
+}
+.main-menu ul li a {
+  display: block;
+  padding: 8px 24px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  margin-left: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+    transition: .3s;
+}
+.main-menu ul li a:hover {
+  border: 1px solid #FB5146;
+  border-radius: 50px;
+}
+.header {
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+
+/* ================ Hero area ================== */
+
+.hero-area {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.hero-area-content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.hero-area-top-content {
+  margin-bottom: 100px;
+}
+.hero-area-top-content h2 {
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.hero-area-top-content p {
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+.hero-area-bottom-content p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
+.hero-area-bottom-content {
+    max-width: 400px;
+}
+.hero-area-bottom-content form input[type="email"] {
+    border: none;
+    padding: 10px;
+    width: 64%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 1%;
+}
+.hero-area-bottom-content form button {
+    border: none;
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background: #FC5245;
+    opacity: 0.8;
+    transition: .3s;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    width: 34%;
+}
+.hero-area-bottom-content form button:hover {
+  opacity: 1;
+}
+.social-area a i.fa {
+  color: #61727F;
+  padding-right: 10px;
+    transition: .3s;
+}
+.social-area a i.fa:hover {
+  color: #FC5245;
+}
+
+
+
+/* ================ Footer ================== */
+
+.footer-menu {
+  text-align: right;
+}
+.footer-menu li a {
+  display: inline-block;
+  font-weight: 700;
+  padding-left: 20px;
+  color: #57727F;
+}
+.footer-menu li a:hover {
+  color: #FC5245;
+}
+.footer {
+  background: #1B1B1D;
+  padding: 10px 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
